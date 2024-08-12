@@ -17,6 +17,8 @@ public class lojaFormaDePagamento {
 
         int formaDePagamento;
         double valorProduto;
+        double valorComJuros;
+        double juros;
         double desconto;
         double valorComDesconto;
 
@@ -32,7 +34,26 @@ public class lojaFormaDePagamento {
                 "\n================================================================");
         formaDePagamento = scanner.nextInt();
 
-        
+        switch (formaDePagamento){
+            case 1:
+                desconto = valorProduto * 0.15;
+                valorComDesconto = valorProduto - desconto;
+                System.out.println("Valor do produto com desconto de 15%: " + valorComDesconto);
+                break;
+            case 2:
+                desconto = valorProduto * 0.10;
+                valorComDesconto = valorProduto - desconto;
+                System.out.println("Valor do produto com desconto de 10%: " + valorComDesconto);
+                break;
+            case 3:
+                System.out.println("Valor do produto sem juros: " + valorProduto);
+                break;
+            case 4:
+                juros = valorProduto * 0.10;
+                valorComJuros = valorProduto + juros;
+                System.out.println("Valor do produto com juros: " + valorComJuros);
+                break;
+        }
 
         }
 }
