@@ -14,6 +14,25 @@ public class lojaFormaDePagamento {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
+        int formaDePagamento;
+        double valorProduto;
+        double desconto;
+        double valorComDesconto;
+
+        System.out.println("Informe o valor do produto...");
+        valorProduto = scanner.nextDouble();
+
+        System.out.println("================================================================" +
+                "\n||Informe a forma de pagamento...                             ||" +
+                "\n||Digite 1 - Para pagamento à vista em Dinheiro ou Pix!       ||" +
+                "\n||Digite 2 - Para pagamento à vista no Cartão de Crédito!     ||" +
+                "\n||Digite 3 - Para pagamento Parcelado em duas vezes!          ||" +
+                "\n||Digite 4 - Para pagametno Parcelado em três ou mais vezes!  ||" +
+                "\n================================================================");
+        formaDePagamento = scanner.nextInt();
+
         
+
         }
 }
